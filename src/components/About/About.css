@@ -1,0 +1,19 @@
+.about-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.about-content h1{
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+.about-content p{
+    font-size: 1.5rem;
+}
+.about-content{
+    margin-top: 10rem;
+}
+@media screen and (max-width: 767px){
+    .about-container{
+        grid-template-columns: 1fr;
+    }
+}

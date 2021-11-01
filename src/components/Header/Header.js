@@ -47,7 +47,7 @@ const Header = () => {
               </Link>
             </li>
             {user?.email ? (
-              <Button onClick={logOut} variant="light">
+              <Button className='logout-btn' onClick={logOut} variant="light">
                 Logout
               </Button>
             ) : (

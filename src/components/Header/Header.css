@@ -6,3 +6,8 @@
     line-height: 2;
     font-family: "Abril Fatface", times, serif;
 }
+.logout-btn{
+    outline: none;
+    background: transparent;
+    background-color: transparent;
+}

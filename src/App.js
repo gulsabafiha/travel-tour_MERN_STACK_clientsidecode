@@ -10,6 +10,7 @@ import Booking from "./components/Booking/Booking";
 import Login from "./components/Login/Login";
 import AuthProvider from "./components/contexts/AuthProvider";
 import PrivateRoute from "./components/PrivateRoute/PrivateRoute";
+import About from './components/About/About'
 
 function App() {
   return (
@@ -18,12 +19,16 @@ function App() {
         <BrowserRouter>
           <Header></Header>
           <Switch>
+          <Route exact path="/">
+              <Home></Home>
+            </Route>
             <Route path="/home">
               <Home></Home>
             </Route>
-            <Route exact path="/">
-              <Home></Home>
+            <Route path="/about">
+              <About></About>
             </Route>
+           
             <Route path="/add-servicce">
               <AddService></AddService>
             </Route>

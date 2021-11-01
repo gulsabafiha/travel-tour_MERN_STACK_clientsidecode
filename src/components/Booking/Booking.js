@@ -15,19 +15,21 @@ const Booking = () => {
   }, []);
 
   const handleDelete = (id) => {
-    const url = `http://localhost:5000/services/${serviceId}`;
+    const proceed=window.confirm('Are you sure, you want to delete?');
+    if(proceed){
+      const url = `http://localhost:5000/services/${serviceId}`;
     fetch(url, {
       method: "DELETE",
     })
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
         if (data.deletedCount) {
           alert("deleted succesfully");
           const reamaining = services.filter(service => service._id !== id);
           setServices(reamaining);
         }
       });
+    }
   };
 
   const handleBooking = () => {

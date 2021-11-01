@@ -27,12 +27,13 @@ button:hover{
     color:black;
 }
     
-@media screen and (min-width: 1024px){
+@media screen and (max-width: 1024px){
     .banner-bg{
         background-image: url('https://livedemo00.template-help.com/wt_51647/images/slider-4-slide-2-1920x678.jpg');
         background-repeat: no-repeat;
         background-size: cover;
     }
+    
 }
 @media screen and (max-width: 767px){
     .banner-bg{
@@ -42,7 +43,7 @@ button:hover{
     }
     .banner-bg h1{
         font-size:2rem;
-        color:azure;
+        color:azure; 
         padding:8rem 5rem;
     }
     .banner-bg h3{
