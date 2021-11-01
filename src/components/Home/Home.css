@@ -1,0 +1,56 @@
+.banner-bg{
+    background-image: url('https://livedemo00.template-help.com/wt_51647/images/slider-4-slide-2-1920x678.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.banner-bg h1{
+    font-size: 7rem;
+    color:azure;
+    padding:8rem 20rem 14rem;
+}
+.banner-bg h3{
+    margin-top: -10rem;
+    color: azure;
+} 
+.banner-bg button{
+    border-color: rgb(101,192,186);
+    color: #fff;
+    box-shadow: 0 0 40px 40px rgb(101,192,186) inset, 0 0 0 0 rgb(101,192,186);
+    transition: all 150ms ease-in-out;
+    padding:1rem 3rem;
+    margin-bottom: 20rem;
+    font-size: 2rem; 
+    margin-top: 2rem;  
+}
+button:hover{
+    box-shadow: 0 0 10px 0 rgb(101,192,186) inset, 0 0 10px 4px rgb(101,192,186);
+    color:black;
+}
+    
+@media screen and (min-width: 1024px){
+    .banner-bg{
+        background-image: url('https://livedemo00.template-help.com/wt_51647/images/slider-4-slide-2-1920x678.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+@media screen and (max-width: 767px){
+    .banner-bg{
+        background-image: url('https://livedemo00.template-help.com/wt_51647/images/slider-4-slide-2-1920x678.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .banner-bg h1{
+        font-size:2rem;
+        color:azure;
+        padding:8rem 5rem;
+    }
+    .banner-bg h3{
+        margin-top: 1rem;
+        color: azure;
+    } 
+    .banner-bg button{
+        font-size: 1.5rem; 
+        padding:.5rem 1rem;
+    }
+}

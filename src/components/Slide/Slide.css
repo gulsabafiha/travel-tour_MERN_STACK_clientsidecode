@@ -1,0 +1,22 @@
+.carosel{
+    margin:8rem 13rem;
+}
+.carosel img{
+    height: 800px;
+}
+.content h1{
+    font-size: 5rem;
+}
+
+@media screen and (max-width: 767px){
+    .content h1{
+        font-size: 3rem;
+    }
+    .carosel{
+        margin:8rem;
+    }
+    .carosel img{
+        height: 500px;
+        width: 900px;
+    }
+}
