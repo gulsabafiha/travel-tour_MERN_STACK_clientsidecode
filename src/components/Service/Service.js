@@ -2,8 +2,8 @@ import React from "react";
 import './Service.css';
 import { Link } from "react-router-dom";
 
-const Service = props => {
-const{img,description,Name,_id}=props.service;
+const Service =({service}) => {
+const{img,description,Name,_id}=service;
 
 
   return (

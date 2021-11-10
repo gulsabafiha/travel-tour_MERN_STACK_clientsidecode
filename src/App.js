@@ -11,6 +11,7 @@ import Login from "./components/Login/Login";
 import AuthProvider from "./components/contexts/AuthProvider";
 import PrivateRoute from "./components/PrivateRoute/PrivateRoute";
 import About from './components/About/About'
+import Orders from "./components/Orders/Orders";
 
 function App() {
   return (
@@ -28,10 +29,13 @@ function App() {
             <Route path="/about">
               <About></About>
             </Route>
+            <PrivateRoute path="/orders">
+              <Orders></Orders>
+            </PrivateRoute>
            
-            <Route path="/add-servicce">
+            <PrivateRoute path="/add-servicce">
               <AddService></AddService>
-            </Route>
+            </PrivateRoute>
             <Route exact path="/services">
               <Services></Services>
             </Route>

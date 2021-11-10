@@ -11,7 +11,7 @@ const AddService = () => {
         alert("Added service successfully!");
         reset();
       }
-    });
+    }); 
   };
 
   return (
@@ -25,7 +25,7 @@ const AddService = () => {
         <br />
         <input {...register("description")} placeholder="short-description" />
         <input {...register("img")} placeholder="Img URL" />
-        <input type="submit" />
+        <input className='mt-3' type="submit" />
       </form>
     </div>
   );

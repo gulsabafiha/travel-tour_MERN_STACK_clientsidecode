@@ -31,11 +31,13 @@ const Header = () => {
                Home
               </Link>
             </li>
-            <li class="nav-item">
+            {user.email && <li class="nav-item">
               <Link class="nav-link active" aria-current="page" to="/add-servicce">
                Add Service
               </Link>
             </li>
+            }
+            
             <li class="nav-item">
               <Link class="nav-link active" aria-current="page" to="/services">
               Services
@@ -46,6 +48,11 @@ const Header = () => {
                 About US
               </Link>
             </li>
+            {user.email &&   <li class="nav-item">
+              <Link class="nav-link" to="/orders">
+                Orders
+              </Link>
+            </li> }
             {user?.email ? (
               <Button className='logout-btn' onClick={logOut} variant="light">
                 Logout
