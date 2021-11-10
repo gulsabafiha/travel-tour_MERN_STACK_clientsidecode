@@ -27,7 +27,7 @@ const Booking = () => {
   
 
   const onSubmit = (data) => {
-    axios.post("http://localhost:5000/orders", data).then((res) => {
+    axios.post("https://intense-ravine-25272.herokuapp.com/orders", data).then((res) => {
       console.log(res);
       if (res.data.insertedID) {
         alert("Ordered service successfully!");
