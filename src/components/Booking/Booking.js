@@ -35,7 +35,7 @@ const Booking = () => {
       }
     });
   };
-
+  
   return (
     <div className="booking-container">
       <div className="offer-container">
